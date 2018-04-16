@@ -3,10 +3,26 @@
 <head>
 <style>
     title{ background-color: purple;}
-    body{background: bisque}
+    body{background: bisque;}
     h1{color: teal;}
-    li{color: teal;}
-    </style>
+    h3{color: brown;}
+    
+
+    .grid-container{
+         display: grid;
+         /*grid-gap:40px 80px;*/
+      background-color: teal;
+        padding: 20px;
+    }
+
+   .grid-item {
+  /*background-color:teal(200, 255, 255, 0.8);*/
+  border: 3px;border-style: solid; border-color: teal;  /*borders on the grid */
+  
+  padding: 30px;
+  font-size: 13px;
+  text-align: center;}
+</style>
 
     <title> Phyllis' page </title>
 </head>
@@ -14,10 +30,16 @@
     <body>
         <h1> Project List</h1>
 
-    <p><a href="file:///C:/Users/Admin/Desktop/JavaScript%20Week%203/Home%20page.html"> Home page </a></p>
-    <p><a href="file:///C:/Users/Admin/Desktop/JavaScript%20Week%203/About%20me.html"> About me </a></p>
+    <p><a href="Home page.html"> Home page </a></p>
+    <p><a href="About me.html"> About me </a></p>
+
+    <div class="grid.container">
+       <div class="grid-item"> <h3>Week 1 agile</h3> <br> <h4>Description:</h4> understanding of agile methology <br> <h4>What technologies used:</h4> powerpoint, trello, GUI mockups <br> <h4>team project?</h4> Yes <br> <h4>Link to project:</h4> N/A </div>
+       <div class="grid-item"><h3>Week 2 Java</h3> <br> <h4>Description:</h4> Creating Hello words scripts <br> <h4>What technologies used:</h4> eclipse <br> <h4>team project?</h4> No <br> <h4>Link to project:</h4> <a href="https://github.com/fifi2018/Hello-world/tree/master/Hello%20World"> Here </a> </div>
+       <div class="grid-item">third</div>
 
 
+</div>
     <footer>
     
            <p><a href="https://www.google.co.zw/"> LinkedIn Profile </a></p>
