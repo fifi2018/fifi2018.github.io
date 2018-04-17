@@ -1,0 +1,51 @@
+<html> 
+<body>
+  <head>
+<style>
+    body{background: bisque}
+    h1{color: teal;}
+    p{font-family: "Calibri";}
+</style>
+
+    <title> Conditionals </title>
+</head>
+
+<h1> Conditionals </h1><br>
+<p> Is John aged between 20 and 40?? click the button below to find out</p>
+
+<button onclick="checkAge()">Click here</button> 
+
+    <p> </p>
+    <script>
+
+    function group(name,age,occupation) //function named group
+    {
+        var ti = {};      //constractor
+        ti.name = name;
+        ti.age = age;
+        ti.occupation = occupation;
+        return ti;
+    } 
+    var employee = new group("John", 50, "Manager");
+       document.write("John is a "+employee.occupation);
+
+       
+       function checkAge() {
+
+           if (employee.age > 20 && employee.age < 40) {
+
+               alert("Yes");
+               alert("John is "+employee.age+" years old");
+           }
+        else {
+            alert("No");
+            alert("John is "+employee.age+" years old");
+        }
+        }
+     
+    </script>
+<p> </p>
+
+<p><a href="index.html"> Home page </a></p>
+</body>
+</html>

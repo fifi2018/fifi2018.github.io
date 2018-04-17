@@ -7,10 +7,13 @@
     p{font-family: "Calibri";}
 </style>
 
-    <title> variables </title>
+    <title> Events </title>
 </head>
 
-<h1> Variables 2 (People) </h1><br>
+<h1> Events (adding 1 to age ) </h1><br>
+<p> John's current age is 50, click on the button below</p>
+
+<button onclick="myFunction()">Click here</button> 
 
     <p> </p>
     <script>
@@ -23,11 +26,21 @@
         ti.age = age;
         ti.occupation = occupation;
         return ti;
-    }
-     var employee = new group("John", 30, "Manager");
+    } 
+    var employee = new group("John", 50, "Manager");
+       document.write("John is a "+employee.occupation);
+
+       //<p> John's current age is 30</p> 
+
+       var i;
+       function myFunction() {
+        for (i = employee.age; i < 70; i++){
+
+        alert(i+(" "));
+        }
+        }
+      //will print out John is a Manager
      
-     window.alert("John is a "+employee.occupation);
-     document.write(employee); // will only print occupation of employee
     </script>
 <p> </p>
 

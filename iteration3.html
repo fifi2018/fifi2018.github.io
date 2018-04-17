@@ -1,0 +1,40 @@
+<html> 
+<body>
+  <head>
+<style>
+    body{background: bisque}
+    h1{color: teal;}
+    p{font-family: "Calibri";}
+</style>
+
+    <title> Iterations</title>
+</head>
+
+<h1> Iteration 3</h1><br>
+<p> Buzz Fizz</p>
+
+<button onclick="myFunction()">Click here</button> 
+
+    <p> </p>
+    <script>
+
+       var i;
+       function myFunction() {
+        for (i = 1; i <= 100; i++){
+
+             if (i % 3 == 0) {
+                 document.write("Fizz");}
+
+                 else if (i % 5 == 0){
+                 document.write("Buzz");}
+
+              else {
+        document.write("Number: "+i+("<br>"));} //("<br>") prints on the next line 
+        }}
+     
+    </script>
+<p> </p>
+
+<p><a href="index.html"> Home page </a></p>
+</body>
+</html>

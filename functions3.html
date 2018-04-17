@@ -7,14 +7,16 @@
     p{font-family: "Calibri";}
 </style>
 
-    <title> variables </title>
+    <title> Functions </title>
 </head>
 
-<h1> Variables 2 (People) </h1><br>
+<h1> Functions 3 / Events 2 (Creating person objects </h1><br>
+
+<button onclick="myFunction()">Click here</button> 
 
     <p> </p>
     <script>
-    var myPeople = {name: "Phyllis", age: 25, occupation: "CEO"}; //array list
+                                                               //var myPeople = {name: "Phyllis", age: 25, occupation: "CEO"}; //array list
 
     function group(name,age,occupation) //function named group
     {
@@ -23,11 +25,11 @@
         ti.age = age;
         ti.occupation = occupation;
         return ti;
-    }
-     var employee = new group("John", 30, "Manager");
+    } 
+    var employee = new group("John", 50, "Manager"); 
+       document.write("John is a "+employee.occupation);
+
      
-     window.alert("John is a "+employee.occupation);
-     document.write(employee); // will only print occupation of employee
     </script>
 <p> </p>
 

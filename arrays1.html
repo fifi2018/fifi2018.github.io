@@ -1,0 +1,42 @@
+<html> 
+<body>
+  <head>
+<style>
+    body{background: bisque}
+    h1{color: teal;}
+    p{font-family: "Calibri";}
+    </style>
+    <title> Arrays  </title>
+</head>
+
+
+<h1> Arrays</h1><br>
+
+<button onclick="arrayPrint()">View</button>  
+<button onclick="arrayAdd()">Add an item</button> 
+<button onclick="arrayDelete()">Delete an item</button> 
+
+    <p> </p>
+    <script> 
+     var myArray = ['summer ', 'autumn ', 'winter ']; //My array list
+    function arrayPrint() {
+    
+    alert(myArray); //prints all currently in array
+
+    }
+    function arrayAdd(){
+        var season = prompt ("Please type in the word you would like to add to array");
+        myArray[myArray.length] = season; // adding the input into arrayList
+        alert(season+ " has been added to array list now click view"); 
+    }
+    function arrayDelete(){
+        alert("Are you sure you want to delete the last item in array?"); 
+        myArray.pop(); // deletes the last item in array
+        alert("deleted, click view or Add an item to add an item"); 
+    }
+    </script>
+<p> </p>
+
+<p><a href="index.html"> Home page </a></p>
+</body>
+</html>
