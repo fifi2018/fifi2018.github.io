@@ -1,0 +1,45 @@
+<html> 
+<body>
+  <head>
+<style>
+    body{background: bisque}
+    h1{color: teal;}
+    p{font-family: "Calibri";}
+</style>
+
+    <title> DOM</title>
+</head>
+
+<h1> D.O.M</h1><br>
+<p> Creating paragraph tags</p>
+
+<input name ="textbox1" id="textbox4" type="text" placeholder="Type here"/> 
+
+<button onclick="addParagraph()">Add paragraph</button>
+<button onclick="addtxtParagraph()">Add text to paragraph</button>
+<button onclick="deleteParagraph()">Delete paragraph</button>
+    <p> </p>
+
+    <script>
+     var par = document.createElement("P");   
+     var txt = document.createTextNode("Hello, World!");
+
+function addParagraph() {
+    par.appendChild(txt); // gets the hello world text into a paragraph
+    document.body.appendChild(par); //print the paragraph
+}
+function addtxtParagraph () {    //:( stuck
+    par.appendChild(name);
+    document.body.appendChild(par);
+}
+
+function deleteParagraph(){
+   par.parentNode.removeChild(par); //deletes paragraph
+    
+}
+    </script>
+<p> </p>
+
+<p><a href="index.html"> Home page </a></p>
+</body>
+</html>

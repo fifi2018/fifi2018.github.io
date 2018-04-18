@@ -1,0 +1,34 @@
+<html> 
+<body>
+  <head>
+<style>
+    body{background: bisque}
+    h1{color: teal;}
+    p{font-family: "Calibri";}
+</style>
+
+    <title> Strings</title>
+</head>
+
+<h1> Strings 4</h1><br>
+<p> Triple Characters</p>
+<p> String is: "xxxabyyyycd"</p>
+    <p> </p>
+    <script>
+
+var str = "xxxabyyyycd";
+    var result = 0;
+
+    for (i = 0; i < str.length; i++) {
+        var tp = str.charAt(i); //checks value in each element 0 being 'a' will refere this a tp
+       
+        if (tp == str.charAt(i+1) && tp == str.charAt(i+2)) //if a character is equal to the next character & the second next  then
+          result++;
+    }
+            document.write(result)
+    </script>
+<p> </p>
+
+<p><a href="index.html"> Home page </a></p>
+</body>
+</html>
